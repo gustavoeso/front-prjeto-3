@@ -1,0 +1,142 @@
+body{
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  /* border: 1.5px solid #1ed760; */
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  background-color: #242424;
+}
+
+.form-card-title {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #1ed760;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1db954;
+}
+
+.btn:active {
+  background-color:#1ed760;
+}
+
+.card_conteiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.form_conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.placeholder_btn_favoritos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_favoritos {
+  padding: 10px;
+  background-color: #1ed760;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn_favoritos:hover {
+  background-color: #1db954;
+}
+
+.btn_favoritos:active {
+  background-color:#1ed760;
+}
+
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

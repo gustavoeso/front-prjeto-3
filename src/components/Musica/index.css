@@ -1,0 +1,53 @@
+  .card-musica{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    margin: 10px 5px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    border-radius: 5px;
+    background-color: #242424;
+    border: 0.75px solid #1ed760;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .card-content-musica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color: white;
+  }
+
+  .btn_salvar {
+    margin-top: 8px;
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-style: italic;
+  }
+  
+  .btn_salvar:hover {
+    background-color: #1ed760;
+  }
+  
+  .btn_salvar:active {
+    background-color: #1ed760;
+  }
+  
