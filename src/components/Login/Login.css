@@ -173,7 +173,24 @@
     width: 100%;
   }
   
+.submit:hover {
+    background-color: #50fd00;
+  }
+  
 .submit:active {
     background-color: rgb(5, 255, 38);
   }
+
+.texto-cadastro {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+.link-cadastro {
+  text-decoration: none;
+  color: #1ed760;
+}
   

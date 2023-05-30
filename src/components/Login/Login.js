@@ -4,7 +4,7 @@ import './Login.css';
 import { Link } from "react-router-dom";
 
 async function loginUser(credentials) {
-    return fetch('https://spotifinder.onrender.com/api/token/', {
+    return fetch('http://localhost:8000/api/token/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -45,6 +45,9 @@ export default function Login({ setToken }) {
           <label className="placeholder">Password</label>
         </div>
         <button type="submit" className="submit">submit</button>
+          <div className="texto-cadastro">Não Tem uma conta?
+            <a className="link-cadastro" href="/cadastro"> Cadastre-se</a>      
+          </div>  
       </form>
     </div>
   )

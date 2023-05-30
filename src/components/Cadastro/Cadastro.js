@@ -1,5 +1,6 @@
 import { useEffect, useState, TextField } from 'react';
 import axios from 'axios';
+import './Cadastro.css';
 
 
 export default function Cadastro() {
@@ -9,7 +10,7 @@ export default function Cadastro() {
     
     function salva_musica(){
         axios
-        .post("https://spotifinder.onrender.com/api/users/", {"username":username, "email":email, "password":password})
+        .post("http://localhost:8000/api/users/", {"username":username, "email":email, "password":password})
         .then((res) => {
             console.log(res)
         })
@@ -17,29 +18,33 @@ export default function Cadastro() {
     
 
     return(
-        <div className="login-wrapper">
-        <h1>Please create user</h1>
-        <form onSubmit={salva_musica}>
-            <label>
-                <p>Username</p>
-                <input type="text" onChange={e => setUserName(e.target.value)}/>
-            </label>
-            <label>
-                <p>Email</p>
-                <input type="text" onChange={e => setEmail(e.target.value)}/>
-            </label>
-            <label>
-                <p>Password</p>
-                <input type="password" onChange={e => setPassword(e.target.value)}/>
-            </label>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-            <div>
-                Tem uma conta?
-                <a href="/"> Login</a>
-            </div>
-        </form>
+        <div className="body-login">
+            <form className="form" onSubmit={salva_musica}>
+              <div className="title-container">
+                <div className="title">Please Create User</div>
+              </div>
+              <div className="input-container ic1">
+                <input  className="input" type="text" placeholder=" " onChange = {e => setUserName(e.target.value)}/>
+                <div className="cut"></div>
+                <label className="placeholder">Username</label>
+              </div>
+              <div className="input-container ic2">
+                <input  className="input" type="text" placeholder=" " onChange = {e => setUserName(e.target.value)}/>
+                <div className="cut"></div>
+                <label className="placeholder">Email</label>
+              </div>
+              <div className="input-container ic2">
+                <input className="input" type="password" placeholder=" " onChange = {e => setPassword(e.target.value)} />
+                <div className="cut"></div>
+                <label className="placeholder">Password</label>
+              </div>
+              <div>
+                  <button className="submit" type="submit">Submit</button>
+              </div>
+              <div className="texto-cadastro">Já tem uma conta?
+                <a className="link-cadastro" href="/cadastro"> Faça o Login</a>      
+              </div> 
+            </form>
         </div>
     )
 }
