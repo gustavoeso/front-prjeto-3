@@ -42,7 +42,7 @@ export default function Cadastro() {
                   <button className="submit" type="submit">Submit</button>
               </div>
               <div className="texto-cadastro">Já tem uma conta?
-                <a className="link-cadastro" href="/cadastro"> Faça o Login</a>      
+                <a className="link-cadastro" href="/"> Faça o Login</a>      
               </div> 
             </form>
         </div>
