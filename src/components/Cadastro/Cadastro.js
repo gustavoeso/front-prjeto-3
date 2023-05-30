@@ -10,7 +10,7 @@ export default function Cadastro() {
     
     function salva_musica(){
         axios
-        .post("http://localhost:8000/api/users/", {"username":username, "email":email, "password":password})
+        .post("https://spotifinder.onrender.com/api/users/", {"username":username, "email":email, "password":password})
         .then((res) => {
             console.log(res)
         })

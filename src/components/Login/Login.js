@@ -4,7 +4,7 @@ import './Login.css';
 import { Link } from "react-router-dom";
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:8000/api/token/', {
+    return fetch('https://spotifinder.onrender.com/api/token/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
