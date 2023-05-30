@@ -1,3 +1,3 @@
-# front-prjeto-3
+# front-projeto-3
 
 O objetivo do nosso projeto é utilizando a API do Spotify, o usuário poderá pesquisar qualquer artista disponível no Spotify diversas vezes, e retornará 20 músicas que o usuário poderá favoritar entre elas. Cada lista de favoritos fica ligado para um usuário determinado o que possibilita que cada usuario tenha uma seleção de música atrelado a ele. O usuário pode verificar suas musicas favoritas apertando o botão de favorito. Para rodar o codigo, no back-end, é necessario criar uma VENV com as dependencias necessárias, e com ela ligada, rodar o comando "python manage.py runserver". Já no front, dentro da pagina do projeto, basta rodar o comando "npm start".
